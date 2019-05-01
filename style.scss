@@ -1,0 +1,46 @@
+$text-color :green;
+body
+{
+    background-color:$text-color;
+    margin:0;
+    padding:0;
+}
+
+#content
+{
+    margin :5em;
+}
+/* Template */
+.exercise
+{
+    background-color: #555;
+    position: relative;
+    height:5%;
+    margin-top:5%;
+}
+.codeEx
+{
+    width:80%;
+    position: absolute;
+    height:100%;
+    
+    left:0;
+}
+.descEx
+{
+    right:0;
+    
+    position: absolute;
+    height:100%;
+}
+
+/* Images-section CSS */
+
+.imagesCode
+{
+    background:#444;
+}
+.imagesDesc
+{
+    background:#666;
+}
