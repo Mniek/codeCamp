@@ -1,30 +1,53 @@
 body {
-  background-color: green;
   margin: 0;
   padding: 0; }
 
-#content {
-  margin: 5em; }
+body {
+  background-color: #4d1453;
+  margin: 0;
+  padding: 0;
+  color: #DFB385; }
 
-/* Template */
-.exercise {
-  background-color: #555;
-  position: relative;
-  height: 5%;
-  margin-top: 5%; }
+main {
+  margin-left: auto;
+  margin-right: auto;
+  background: #b975d8;
+  width: 80%; }
 
-.codeEx {
-  width: 80%;
-  position: absolute;
-  height: 100%;
-  left: 0; }
+article {
+  width: 99.99%;
+  height: 30%;
+  background-color: #996633;
+  margin: 1%;
+  position: relative; }
 
 .descEx {
-  right: 0;
   position: absolute;
-  height: 100%; }
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  background-color: #9e6999;
+  border-right: 2px solid black; }
 
-/* Images-section CSS */
+.codeEx {
+  background-color: #7756f0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0%; }
+
+.codeEx * {
+  padding-left: 2%; }
+
+.important {
+  background-color: #771723; }
+
+.smallbox {
+  width: 25%;
+  height: 25%;
+  margin: 5%;
+  float: left; }
+
 .imagesCode {
   background: #444; }
 

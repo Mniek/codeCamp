@@ -1,41 +1,75 @@
-$mainBgColor :beige;
+$bodyBgColor :#4d1453;
+$mainBgColor:#b975d8;
+$articleBgColor:#996633;
+$descBgColor:#9e6999;
+$codeBgColor: rgb(119, 86, 240);
 body
 {
-    background-color:$mainBgColor;
+   
     margin:0;
     padding:0;
 }
 
-#content
-{
-    margin :5em;
-}
-/* Template */
-.exercise
-{
-    background-color: #555;
-    position: relative;
-    height:5%;
-    margin-top:5%;
-}
-.codeEx
-{
-    width:80%;
-    position: absolute;
-    height:100%;
-    
-    left:0;
-}
-.descEx
-{
-    right:0;
-    
-    position: absolute;
-    height:100%;
+
+ body {
+  background-color: $bodyBgColor;
+   margin: 0;
+  padding: 0;
+     color: #DFB385; 
 }
 
-/* Images-section CSS */
+ 
+ main 
+ {
+         margin-left:auto;
+         margin-right:auto;
+        background:$mainBgColor;
+        width:80%;
+}
+article
+{
+        width:99.99%;
+        height:30%;
+        background-color:$articleBgColor;
+        margin:1%;
+        position: relative;
+}       
 
+        .descEx
+        {
+                position: absolute;
+                width:50%;
+                height:100%;
+                left:0%;
+                background-color: $descBgColor;
+                border-right:2px solid black;
+                // padding-left: 2px;
+
+        }
+        .codeEx
+        {
+                background-color: $codeBgColor;
+                position: absolute;
+                width:50%;
+                height:100%;
+                right: 0%;
+
+        }
+        .codeEx *
+        {
+                padding-left:2%;
+        }
+        .important
+        {
+                background-color:#771723;        
+        }
+        .smallbox
+        {
+                width:25%;
+                height:25%;
+                margin:5%;
+                float:left;     
+        }
 .imagesCode
 {
     background:#444;
@@ -44,3 +78,6 @@ body
 {
     background:#666;
 }
+
+
+
