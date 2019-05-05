@@ -26,284 +26,323 @@
 
           
 
-                <article class="exercise " >
+            <article class="exercise " >
+        
+                <aside class="codeEx DOMElementsCode">
+                        
+                        <p> <mark> < header ></mark> 
+                            <br/>
+                                <p>
+                        <p > <mark> < main > </mark>
+                            <br/> 
+                                </p>
+                        
+                        <p> <mark> < footer> </mark>
+                            <br/> 
+                            </p>
+
+                </aside>
+                <div class = "descEx DOMElementsDesc" >
+                    <p>Some stuff about the page</p>
+                    <p>Main content of page</p>
+                    <p>The text about corpo and etc.</p>
+
+                </div>
             
+            </article>
+
+            <article class="exercise " >
+        
                     <aside class="codeEx DOMElementsCode">
                             
-                            <p> <mark> < header ></mark> 
-                                <br/>
-                                  <p>
-                            <p > <mark> < main > </mark>
-                                <br/> 
-                                  </p>
-                            
-                            <p> <mark> < footer> </mark>
-                                <br/> 
-                                </p>
+                            <p> <mark> < article ></mark> </p>
+                            <p > <mark> < section > </mark> </p>
+                            <p> <mark> < nav > </mark></p>   
+                            <p> <mark> < div > </mark></p>
+                        
+                                
 
                     </aside>
                     <div class = "descEx DOMElementsDesc" >
-                        <p>Some stuff about the page</p>
-                        <p>Main content of page</p>
-                        <p>The text about corpo and etc.</p>
+                        
+                                
+                    <p>
+                        Independent stuff which can be removed without issue
+                        </p>    
+                        <p>
+                            Groups a group of connected articles, divs etc.
+                        </p>
+                        <p>
+                            You are using it to hold navigation buttons
+                        </p>
+                        <p>
+                                Object which helps to hold and manage on website 
+                        </p>
+                        
     
                     </div>
                 
-                </article>
+            </article>
+                   
 
-                <article class="exercise " >
-            
-                        <aside class="codeEx DOMElementsCode">
+                   
+            <article class="exercise " >
+    
+                    <aside class="codeEx DOMElementsCode">
+
+                            <p > <mark> < figure > </mark> </p>
+                            <p> <mark> < figurecaption ></mark> </p>
+                            <figure onmouseover="showCode('Hello')">
+                                <img src = 'smiley.png' width="50px" height="50px"/>
+                                <figcaption>
+                                    The smiling face
+                                </figcaption>
+                            </figure>
+
+                        
+
+                    </aside>
+                    <div class = "descEx DOMElementsDesc" >
+                        <p> They are used to "stack" a photo and a description.</p>
+                            <p> Description of the image</p>
                                 
-                                <p> <mark> < article ></mark> </p>
-                                <p > <mark> < section > </mark> </p>
-                                <p> <mark> < nav > </mark></p>   
-                                <p> <mark> < div > </mark></p>
-                           
-                                  
+                        
+    
+                    </div>
+                
+            </article>
+
+            <article class="exercise " >
+
+                <aside class="codeEx DOMElementsCode">
+
+                        <p > <mark> < label for = "nameConnected" > nameConnected:</ label> </mark> </p>
+                        <p> <mark> < input type="text" name="nameConnected" id = "nameConnected" ></mark> </p>
+                        
+                        <label for = "nameConnected" > nameConnected:</label>
+                        <input type="text" name="nameConnected" id = "nameConnected" >
+                    
+
+                </aside>
+                <div class = "descEx DOMElementsDesc" >
+                    <p> <mark>Labels</mark> are used to optimize code for codeReaders, the argument <mark>for</mark> is used to let the text to be clickable for input</p>
+                            
+                    
+
+                </div>
+                
+            </article>
+
+
+            <article class="exercise " >
+
+                <aside class="codeEx DOMElementsCode">
+
+                        
+                        <fieldset><legend> Im somewhat title for this</legend>
+                            <label><input type="radio" value="One"> One</label>
+                            <label><input type="radio" value="Rottweiler">Rottweiler</label>
+                        </fieldset>
+                    
+
+                </aside>
+                <div class = "descEx DOMElementsDesc" >
+                    <p> <mark>< fieldset ></mark> is used to group connected elems, like radio buttons in form</p>
+                    <p><mark> < legend ></mark> is a title of the form, map, image, whatever</p>
+                    <p><mark> < label > </mark> here, lets to add a visible text next to button</p>
+                    
+
+                </div>
+                
+            </article>
+            <article class="exercise " >
+
+                <aside class="codeEx DOMElementsCode">
+
+                        
+                        <form action="#">
+                            <label for="pickDate">What date : </label>
+                            <input type="date" id="pickDate">
+                            <input type="submit" >
+                        </form>
+                    <time datetime="2019-05-02"> The 2<sup>nd</sup> of May in 2019 year</time>
+
+                </aside>
+                <div class = "descEx DOMElementsDesc" >
+                    <p> <mark>< input type="date" ></mark> Lets You to create an input which 
+                    helps user to chose date without writing it "from finger"</p>
+                    <p> <mark>< time ></mark> does not has an impact of look on website, but helps search engines find a date</p>
+                    <p> <mark>< time datetime = "yyyy-mm-dd"></mark> attribiute which holds a standarized date, helps people to understand the date without problem of language and etc</p>
+
+                </div>
+                
+            </article>
+            <article class="important">
+                <h4>!IMPORTANT!</h4>
+                <p>If You want to hide something so only screen readers will be able to read, You cannot hide content like <mark class="wrong"> visibility:none</mark> or <mark class="wrong">display:hidden</mark>
+                    </p>
+                    <p>For this problem, You should write something like that in Your CSSFile:</p>
+
+                    <p>.sr-only {</p>
+                            <p> position: absolute ;</p>
+                            <p>left: -10000;</p>
+                            <p>width: 1px;</p>
+                            <p>height: 1px;</p>
+                            <p>top: auto;</p>
+                            <p>overflow: hidden;</p>
+                            <p>}</p>
+            </article>
+
+            <article class="exercise " >
+
+                        <aside class="codeEx DOMElementsCode">
+
+                            <div class = "smallBox" style= "background:#f44; color:#f22">
+                                <h3 class="wrong">WRONG</h3>
+                            </div>
+                            <div class = "smallBox" style= "background:#2F2; color:#ff6">
+                                <h3 class = "good">GOOD</h3>
+                            </div>
     
                         </aside>
                         <div class = "descEx DOMElementsDesc" >
-                          
-                                    
-                        <p>
-                            Independent stuff which can be removed without issue
-                         </p>    
-                            <p>
-                                Groups a group of connected articles, divs etc.
-                            </p>
-                            <p>
-                                You are using it to hold navigation buttons
-                            </p>
-                            <p>
-                                    Object which helps to hold and manage on website 
-                            </p>
-                            
+                            <p> You should remember about optimized contrast, which is minimum 4.5:1, black to white(highest possible contrast) is 21:1</p>
         
                         </div>
                     
-                    </article>
-                   
+            </article>
 
+            <article class="exercise " >
+
+                <aside class="codeEx contrastDesc">
+                        
+                        <p id="smallLight" >I have small contrast </p>
+                        <p id="smallHue" >I have small Hue</p>
+                        <p id="smallSaturation" >I have small Saturation </p>
+                        <p id = "correctPara">I have everything on 50% color </p>
+                        <br/>
+                    
+                        
+                            
+
+                </aside>
+                <div class = "descEx contrastCode" >
+                    
+                            
+                <p>
+                    <mark>hsl()</mark> the syntax is similliar to the rgb() but it is <mark>Hue, Saturation and Lightness</mark>
+                </p>
+                    
+
+                </div>
+                            
+            </article> 
+            <article class="exercise " >
+
+                    <aside class="codeEx contrastDesc">
+                            
+                            <p id="correctAnchorOfLink" >if You want to find out how to make Your penis rise 10x,<br/> <a href = "#">Click here for more information</a> </p>
+                            <p id="wrongAnchorOfLink" >if You want to find out how to make Your penis rise 10x, <br/><a href = "#">Click here </a>for more information </p>
+                        
+                            
+                                
+    
+                    </aside>
+                    <div class = "descEx contrastCode" >
+                        <p>
+                            When You want to insert a link into the text, You should remember about screen readers, the correct paragraph shows how to do it.
+                        </p>
+                        
+    
                     </div>
-                    <article class="exercise " >
-            
-                            <aside class="codeEx DOMElementsCode">
+                                
+                </article> 
 
-                                    <p > <mark> < figure > </mark> </p>
-                                    <p> <mark> < figurecaption ></mark> </p>
-                                    <figure onmouseover="showCode('Hello')">
-                                        <img src = 'smiley.png' width="50px" height="50px"/>
-                                        <figcaption>
-                                            The smiling face
-                                        </figcaption>
-                                    </figure>
+                <article class="exercise " >
 
-                               
+                        <aside class="codeEx contrastDesc">
+                                
+                                <p>An access key for this link is "k"<br/> <a href = "#" accesskey="k">Click K</a> </p>
+                                <p>An access key for this link is "j"<br/> <a href = "#" accesskey="j">Click J</a> </p>
+                            
+                                
+                                    
         
-                            </aside>
-                            <div class = "descEx DOMElementsDesc" >
-                              <p> They are used to "stack" a photo and a description.</p>
-                                    <p> Description of the image</p>
+                        </aside>
+                        <div class = "descEx contrastCode" >
+                            
+                                    
+                        <p>
+                           "accesskey" param allows keyboard-only users to focus it faster
+                        </p>
+                        <p>The accesskey attribute specifies a shortcut key to activate focus on element.</p>
+<p><strong>Note:</strong> The shortcut is varying in different browsers:</p>
+<ul>
+    <li>IE, Chrome, Safari, Opera 15+: [ALT] + <em>accesskey</em></li>
+    <li>Opera prior version 15: [SHIFT] [ESC] + <em>accesskey</em></li>
+    <li>Firefox: [ALT] [SHIFT] + <em>accesskey</em></li>
+</ul>
+
+                            
+        
+                        </div>
+
+                                    
+                    </article>
+
+                    <article class="exercise " >
+
+                            <aside class="codeEx contrastDesc">
+                                    
+                                    <p tabindex="0">I am the first thing on this site which will be focused when "TAB" </p>
+                                    <p tabindex="1">I am second</p>
+                                
+                                    
                                         
-                                
             
-                            </div>
-                        
-                        </article>
-
-                        <article class="exercise " >
-            
-                                <aside class="codeEx DOMElementsCode">
-    
-                                        <p > <mark> < label for = "nameConnected" > nameConnected:</ label> </mark> </p>
-                                        <p> <mark> < input type="text" name="nameConnected" id = "nameConnected" ></mark> </p>
-                                       
-                                        <label for = "nameConnected" > nameConnected:</label>
-                                        <input type="text" name="nameConnected" id = "nameConnected" >
-                                   
-            
-                                </aside>
-                                <div class = "descEx DOMElementsDesc" >
-                                  <p> <mark>Labels</mark> are used to optimize code for codeReaders, the argument <mark>for</mark> is used to let the text to be clickable for input</p>
-                                            
-                                    
-                
-                                </div>
-                            
-                            </article>
-
-
-                        <article class="exercise " >
-            
-                                <aside class="codeEx DOMElementsCode">
-    
-                                      
-                                        <fieldset><legend> Im somewhat title for this</legend>
-                                            <label><input type="radio" value="One"> One</label>
-                                            <label><input type="radio" value="Rottweiler">Rottweiler</label>
-                                        </fieldset>
-                                   
-            
-                                </aside>
-                                <div class = "descEx DOMElementsDesc" >
-                                  <p> <mark>< fieldset ></mark> is used to group connected elems, like radio buttons in form</p>
-                                  <p><mark> < legend ></mark> is a title of the form, map, image, whatever</p>
-                                  <p><mark> < label > </mark> here, lets to add a visible text next to button</p>
-                                    
-                
-                                </div>
-                            
-                            </article>
-                            <article class="exercise " >
-            
-                                    <aside class="codeEx DOMElementsCode">
-        
-                                          
-                                            <form action="#">
-                                                <label for="pickDate">What date : </label>
-                                                <input type="date" id="pickDate">
-                                                <input type="submit" >
-                                            </form>
-                                       <time datetime="2019-05-02"> The 2<sup>nd</sup> of May in 2019 year</time>
-                
-                                    </aside>
-                                    <div class = "descEx DOMElementsDesc" >
-                                        <p> <mark>< input type="date" ></mark> Lets You to create an input which 
-                                        helps user to chose date without writing it "from finger"</p>
-                                        <p> <mark>< time ></mark> does not has an impact of look on website, but helps search engines find a date</p>
-                                        <p> <mark>< time datetime = "yyyy-mm-dd"></mark> attribiute which holds a standarized date, helps people to understand the date without problem of language and etc</p>
-                    
-                                    </div>
-                                
-                                </article>
-                                <article class="important">
-                                    <h4>!IMPORTANT!</h4>
-                                    <p>If You want to hide something so only screen readers will be able to read, You cannot hide content like <mark class="wrong"> visibility:none</mark> or <mark class="wrong">display:hidden</mark>
-                                        </p>
-                                        <p>For this problem, You should write something like that in Your CSSFile:</p>
-
-                                        <p>.sr-only {</p>
-                                                <p> position: absolute ;</p>
-                                                <p>left: -10000;</p>
-                                                <p>width: 1px;</p>
-                                                <p>height: 1px;</p>
-                                                <p>top: auto;</p>
-                                                <p>overflow: hidden;</p>
-                                                <p>}</p>
-                                </article>
-
-                                <article class="exercise " >
-            
-                                        <aside class="codeEx DOMElementsCode">
-            
-                                            <div class = "smallBox" style= "background:#f44; color:#f22">
-                                                <h3 class="wrong">WRONG</h3>
-                                            </div>
-                                            <div class = "smallBox" style= "background:#2F2; color:#ff6">
-                                                <h3 class = "good">GOOD</h3>
-                                            </div>
-                    
-                                        </aside>
-                                        <div class = "descEx DOMElementsDesc" >
-                                            <p> You should remember about optimized contrast, which is minimum 4.5:1, black to white(highest possible contrast) is 21:1</p>
-                        
-                                        </div>
-                                    
-                                    </article>
-
-                                    <article class="exercise " >
-            
-                                        <aside class="codeEx contrastDesc">
-                                                
-                                               <p id="smallLight" >I have small contrast </p>
-                                               <p id="smallHue" >I have small Hue</p>
-                                               <p id="smallSaturation" >I have small Saturation </p>
-                                               <p id = "correctPara">I have everything on 50% color </p>
-                                               <br/>
-                                                <p>
-                                                    
-                                           
-                                                </p>
-                                              
-                                                  
-                    
-                                        </aside>
-                                        <div class = "descEx contrastCode" >
-                                          
-                                                    
-                                        <p>
-                                            A possibility to add audio into html .
-                                            </p>
-                                            <p>It cannot be on yt or anything online </p>
-                                            
-                        
-                                        </div>
-                                    
-                                    </article>  <article class="exercise " >
-            
-                                        <aside class="codeEx interestingStuffCode">
-                                                
-                                                <audio controls>
-                                                    <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
-                                                    type="audio/mpeg"/>
-                                                </audio>
-                                                <br/>
-                                                <p>
-                                                      < audio controls ><br/>
-                                                        < source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
-                                                        type="audio/mpeg"/>
-                                                    < /audio>
-                                           
-                                                </p>
-                                              
-                                                  
-                    
-                                        </aside>
-                                        <div class = "descEx interestingStuffDesc" >
-                                          
-                                                    
-                                        <p>
-                                            A possibility to add audio into html .
-                                            </p>
-                                            <p>It cannot be on yt or anything online </p>
-                                            
-                        
-                                        </div>
-                                    
-                                    </article>    
-                    <article class="exercise " >
-            
-                            <aside class="codeEx interestingStuffCode">
-                                    
-                                    <audio controls>
-                                        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
-                                        type="audio/mpeg"/>
-                                    </audio>
-                                    <br/>
-                                    <p>
-                                          < audio controls ><br/>
-                                            < source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
-                                            type="audio/mpeg"/>
-                                        < /audio>
-                               
-                                    </p>
-                                  
-                                      
-        
                             </aside>
-                            <div class = "descEx interestingStuffDesc" >
-                              
+                            <div class = "descEx contrastCode" >
+                                
                                         
                             <p>
-                                A possibility to add audio into html .
-                                </p>
-                                <p>It cannot be on yt or anything online </p>
-                                
-            
+                               <mark>"tabindex = 'x' "</mark> param allows keyboard users to focus on elem via "tab-key" in a certain order
+                            </p>
                             </div>
-                        
+                            
+                                        
                         </article>
+            <article class="exercise " >
+    
+                <aside class="codeEx interestingStuffCode">
+                        
+                        <audio controls>
+                            <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
+                            type="audio/mpeg"/>
+                        </audio>
+                        <br/>
+                        <p>
+                                < audio controls ><br/>
+                                < source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
+                                type="audio/mpeg"/>
+                            < /audio>
+                    
+                        </p>
+                        
+                            
+
+                </aside>
+                <div class = "descEx interestingStuffDesc" >
+                    
+                            
+                <p>
+                    A possibility to add audio into html .
+                    </p>
+                    <p>It cannot be on yt or anything online </p>
+                    
+
+                </div>
+                
+            </article>
         
         
         

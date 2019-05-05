@@ -3,6 +3,10 @@ mark
 {
         background:hotpink;
 }
+a
+{
+        color:red;
+}
 #smallLight
 {
         color:hsl(30%, 40%, 5%);
@@ -18,4 +22,8 @@ mark
 #correctPara
 {
         color:hsl(50%, 500%, 50%);
+}
+:focus
+{
+        background:yellow;
 }

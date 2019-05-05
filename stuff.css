@@ -1,6 +1,9 @@
 mark {
   background: hotpink; }
 
+a {
+  color: red; }
+
 #smallLight {
   color: #120d08; }
 
@@ -12,5 +15,8 @@ mark {
 
 #correctPara {
   color: #ffd500; }
+
+:focus {
+  background: yellow; }
 
 /*# sourceMappingURL=stuff.css.map */

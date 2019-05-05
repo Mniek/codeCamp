@@ -1,3 +1,4 @@
+$mainColor:rgb(211, 33, 33);
 $bodyBgColor :#4d1453;
 $mainBgColor:#b975d8;
 $articleBgColor:#996633;
@@ -15,7 +16,7 @@ body
   background-color: $bodyBgColor;
    margin: 0;
   padding: 0;
-     color: #DFB385; 
+     color: $mainColor; 
 }
 
  
@@ -44,6 +45,7 @@ article
                 background-color: $descBgColor;
                 border-right:2px solid black;
                 // padding-left: 2px;
+                overflow:auto;
 
         }
         .codeEx
@@ -53,6 +55,7 @@ article
                 width:50%;
                 height:100%;
                 right: 0%;
+                overflow: auto;
 
         }
         .codeEx *

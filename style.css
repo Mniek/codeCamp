@@ -6,7 +6,7 @@ body {
   background-color: #4d1453;
   margin: 0;
   padding: 0;
-  color: #DFB385; }
+  color: #d32121; }
 
 main {
   margin-left: auto;
@@ -27,14 +27,16 @@ article {
   height: 100%;
   left: 0%;
   background-color: #9e6999;
-  border-right: 2px solid black; }
+  border-right: 2px solid black;
+  overflow: auto; }
 
 .codeEx {
   background-color: #7756f0;
   position: absolute;
   width: 50%;
   height: 100%;
-  right: 0%; }
+  right: 0%;
+  overflow: auto; }
 
 .codeEx * {
   padding-left: 2%; }
